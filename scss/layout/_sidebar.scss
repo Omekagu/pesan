@@ -1,7 +1,7 @@
 .head {
   @include flex(space-between, row);
-  height: 100.5rem;
   .sidebar {
+    height: 232.5rem;
     background-color: $bg-color;
     width: 34.5rem;
     border-radius: 2px;

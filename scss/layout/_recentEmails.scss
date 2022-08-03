@@ -1,0 +1,281 @@
+.email--content {
+  @include flex(space-between, row);
+  margin: 3.9rem;
+
+  // .recent--emails {
+  // }
+
+  .recent--emails {
+    width: 109.6rem;
+    margin-right: 3.9rem;
+    background: $bg-secondary-color;
+    height: 74rem;
+    left: calc(50% - 109.6rem / 2 - 1.7rem);
+    top: 91.3rem;
+    border: 0.1rem solid $bg-color-primary;
+    border-radius: 2rem;
+    flex: 1;
+
+    &__head {
+      @include flex(space-evenly, row);
+      transform: translateX(-2rem);
+      padding: 2rem;
+    }
+    &__headright {
+      transform: translateX(-14rem);
+    }
+    &__headtext {
+      text-align: left;
+      height: 3rem;
+      left: calc(50% - 14.5rem / 2 - 46.25rem);
+      top: 94.3rem;
+      text-transform: capitalize;
+
+      /* H3 / Poppins / Bold 20 */
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 3rem;
+      margin: auto;
+      /* identical to box height */
+
+      /* Primary Text */
+
+      color: $color-secondary-text;
+    }
+    &__text {
+      width: 19.2rem;
+      height: 2.1rem;
+      left: calc(50% - 19.2rem / 2 - 43.9rem);
+      top: 98.3rem;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+
+      color: $color-primary-text;
+    }
+    &__list {
+      @include flex(space-between, row);
+      list-style: none;
+      transform: translateX(13rem);
+      border-radius: 14rem;
+      padding: 3rem;
+    }
+    &__items {
+      padding: 3rem;
+      text-transform: capitalize;
+      text-decoration: none;
+      left: 5.74%;
+      right: 72.58%;
+      top: 0%;
+      bottom: 51.02%;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      border-bottom: 0.2rem solid $color-primary-text;
+      color: $color-primary-text;
+
+      // HOVER
+      &:hover {
+        color: $color-primary;
+        border-bottom: 0.4rem solid $color-primary;
+      }
+    }
+    // ///////////////ITEMBOX
+
+    &__itembox {
+    }
+    &__item {
+      @include flex(space-between, column);
+      padding: 1rem;
+      border-bottom: 1px solid $bg-color-primary;
+      width: 1096px;
+      height: 132px;
+      left: 395px;
+      top: 1061px;
+    }
+    &__user {
+      @include flex(space-between, row);
+    }
+    &__profile {
+      @include flex(space-between, row);
+      // transform: translateX(-28.2rem);
+      margin-right: 7rem;
+    }
+    &__photo {
+      height: 50px;
+      width: 50px;
+      left: 445px;
+      top: 1061px;
+      border-radius: 12px;
+
+      margin-right: 1rem;
+    }
+    &__gmail {
+      height: 2.1rem;
+      left: calc(50% - 18.1rem / 2 - 35.25rem);
+      top: 106.2rem;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      color: $color-primary-text;
+    }
+    &__time {
+      height: 2.1rem;
+      left: calc(50% - 14.9rem / 2 - 16.65rem);
+      top: 106.2rem;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      color: $color-primary-text;
+    }
+    &__name {
+      width: 47.7rem;
+      // height: 2.7rem;
+      left: calc(50% - 38.3rem / 2 - 25.15rem);
+      top: 109.1rem;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $color-secondary-text;
+      text-transform: capitalize;
+    }
+    &__star {
+      margin-left: 30rem;
+      height: 2.1rem;
+      width: 2.1rem;
+      left: 0.14rem;
+      top: 0.15rem;
+      border-radius: 0rem;
+    }
+    &__userInfo {
+      @include flex(space-between, row);
+    }
+    &__paragraph {
+      transform: translateX(-6rem);
+      width: 66.7rem;
+      // height: 4.2rem;
+      left: calc(50% - 77.7rem / 2 - 5.45rem);
+      top: 1135rem;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      color: $color-secondary-text;
+    }
+    &__icon {
+      @include flex(space-between, row);
+      transform: translateX(3rem);
+      height: 2rem;
+      width: 2rem;
+      left: 0.19rem;
+      top: 0.2rem;
+      border-radius: 0px;
+    }
+    &__inbox {
+      margin-right: 2rem;
+    }
+  }
+
+  // RECENT EMAIL CONTACT
+
+  .recent--contact {
+    margin-right: 3.9rem;
+    background: $bg-secondary-color;
+    height: 74rem;
+    left: calc(50% - 109.6rem / 2 - 1.7rem);
+    top: 91.3rem;
+    border: 0.1rem solid $bg-color-primary;
+    border-radius: 2rem;
+    flex: 1;
+
+    width: 34rem;
+    padding: 3.9rem;
+
+    &__head {
+      @include flex(space-evenly, row);
+      padding: 2rem;
+    }
+    &__headtext {
+      text-align: left;
+
+      height: 3rem;
+      left: calc(50% - 14.5rem / 2 - 46.25rem);
+      top: 94.3rem;
+      text-transform: capitalize;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 3rem;
+      margin: auto;
+      color: $color-secondary-text;
+    }
+    &__text {
+      width: 16.1rem;
+      height: 2.1rem;
+      left: calc(50% - 19.2rem / 2 - 43.9rem);
+      top: 98.3rem;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+
+      color: $color-primary-text;
+    }
+    &__btn {
+      transform: translateY(2rem);
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+      border: none;
+      left: 33.33%;
+      right: 35.29%;
+      top: 14.89%;
+      bottom: 34.04%;
+
+      font-family: 'Cairo';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.8rem;
+      line-height: 2.4rem;
+      color: $bg-color;
+    }
+    &__list {
+      line-height: 3rem;
+      width: 30rem;
+      height: 8.2rem;
+    }
+    &__user {
+      @include flex(space-between, row);
+      left: calc(50% - 340px / 2 + 740px);
+      top: 103.1rem;
+      padding: 1rem;
+      background: #ffffff;
+      border-radius: 1.4rem;
+    }
+    &__profile {
+      @include flex(space-between, row);
+    }
+    &__photo {
+      margin-right: 1rem;
+    }
+    &__name {
+    }
+    &__post {
+    }
+  }
+}

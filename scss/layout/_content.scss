@@ -1,5 +1,12 @@
 .content {
   @include flex(space-between, row);
+  margin: 3.9rem;
+  .bigbanner--right {
+    margin-left: 3.9rem;
+  }
+  .bigbanner--left {
+    margin-right: 3.9rem;
+  }
   .bigbanner--left,
   .bigbanner--right {
     width: 71.8rem;
@@ -9,118 +16,110 @@
     background: $bg-color;
     border: 0.1rem solid $bg-color-primary;
     border-radius: 2rem;
-    margin: 0.8rem;
     padding: 1rem 3rem;
   }
   &__heading {
-    width: 410px;
-    height: 96px;
-    left: calc(50% - 510px / 2 - 260px);
-    top: 412px;
-
-    /* H1 / Poppins / Bold 32 */
-
+    width: 41rem;
+    height: 9.6rem;
+    left: calc(50% - 51rem / 2 - 26rem);
+    top: 41.2rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
-    color: #1d1b23;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    color: $color-secondary-text;
   }
   &__paragraph {
-    width: 266px;
-    height: 72px;
-    left: calc(50% - 266px / 2 - 382px);
-    top: 523px;
+    width: 26.6rem;
+    height: 7.2rem;
+    left: calc(50% - 26.6rem / 2 - 38.2rem);
+    top: 52.3rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #717579;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-primary-text;
   }
-  &__list {
-  }
+  // &__list {
+  // }
   &__item {
     display: flex;
     align-items: center;
     list-style: none;
-    height: 24px;
-    left: calc(50% - 209px / 2 - 361.5px);
-    top: 621px;
+    height: 2.4rem;
+    left: calc(50% - 20.9rem / 2 - 36.5rem);
+    top: 62.1rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #717579;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-primary-text;
     text-transform: capitalize;
   }
   &__check {
     margin-right: 2.5rem;
-    height: 23.269619px;
+    height: 2.3rem;
     // padding: 1rem;
-    width: 24.000001907348633px;
-    left: -0.00006103515625px;
-    top: 3.36517333984375px;
+    width: 2.4rem;
+    left: -0.0006103515625rem;
+    top: 0.336rem;
     border-radius: 0px;
-    left: calc(50% - 718px / 2 - 206px);
-    top: 362px;
-    background: #ffffff;
-    border: 1px solid #eeeeee;
-    border-radius: 20px;
+    left: calc(50% - 71.8rem / 2 - 20.6rem);
+    top: 36.2rem;
+    background: $bg-color;
+    border: 1px solid $bg-color-primary;
+    border-radius: 2rem;
   }
   &__more {
     padding: 0 0 5rem 5rem;
-    width: 209px;
-    height: 24px;
-    left: calc(50% - 209px / 2 - 361.5px);
-    top: 720px;
+    width: 20.9rem;
+    height: 2.4rem;
+    left: calc(50% - 20.9rem / 2 - 36.5rem);
+    top: 72rem;
     text-decoration: none;
-    /* H7 / Poppins / Reguler 16 */
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #00a389;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-primary;
     text-transform: capitalize;
   }
   &__btn {
     border: none;
-    height: 50px;
-    width: 221px;
+    height: 5rem;
+    width: 22.1rem;
     left: 0px;
     top: 0px;
-    background: #ffffff;
-    /* Primary */
-
-    border: 1px solid #00a389;
-    border-radius: 12px;
+    background: $bg-color;
+    border: 1px solid $color-primary;
+    border-radius: 1.2rem;
     transform: translateY(9.5rem);
   }
   &__illustration {
-    width: 371.91px;
-    height: 269.31px;
-    left: calc(50% - 371.91px / 2 - 83.87px);
-    top: 554px;
+    width: 37.191rem;
+    height: 26.931rem;
+    left: calc(50% - 37.191rem / 2 - 8.387rem);
+    top: 55.4rem;
   }
 
   .pie {
     @include flex(space-between, row);
   }
   &__title {
-    width: 94px;
-    height: 30px;
-    left: calc(50% - 94px / 2 + 269px);
-    top: 392px;
+    width: 9.4rem;
+    height: 3rem;
+    left: calc(50% - 9.4rem / 2 + 26.9rem);
+    top: 39.2rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #1d1b23;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: $color-secondary-text;
   }
   .list {
     @include flex(space-between, row);
@@ -135,46 +134,42 @@
     gap: 3rem;
   }
   &__input {
-    height: 20px;
-    width: 20px;
-    left: 1.99993896484375px;
-    top: 2px;
+    height: 2rem;
+    width: 2rem;
+    left: 0.199993896484375;
+    top: 0.2rem;
     border-radius: 0px;
 
     gap: 1rem;
   }
   &__label {
     transform: translateX(-2rem);
-    height: 24px;
-    left: calc(50% - 46px / 2 + 636px);
-    top: 399px;
+    height: 2.4rem;
+    left: calc(50% - 4.6rem / 2 + 63.6rem);
+    top: 39.9rem;
 
     /* H7 / Poppins / Reguler 16 */
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-
-    /* Primary Text */
-
-    color: #1d1b23;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $color-secondary-text;
   }
   &__option {
-    width: 38px;
-    height: 38px;
-    left: calc(50% - 38px / 2 + 868px);
-    top: 392px;
+    width: 3.8rem;
+    height: 3.8rem;
+    left: calc(50% - 3.8rem / 2 + 86.8rem);
+    top: 39.2rem;
 
     /* White */
 
-    background: #ffffff;
+    background: $bg-color;
     /* White */
 
-    border: 1px solid #ffffff;
-    border-radius: 12px;
+    border: 0.1rem solid $bg-color;
+    border-radius: 1.2rem;
   }
   &__elipse {
     @include flex(space-between, row);
@@ -188,23 +183,15 @@
     }
 
     span {
-      width: 33px;
-      height: 27px;
-      left: calc(50% - 33px / 2 + 315.35px);
-      top: 541px;
-
-      /* H5 / Poppins / Medium 18 */
-
-      font-family: 'Poppins';
+      width: 3.3rem;
+      height: 2.7rem;
+      left: calc(50% - 3.3rem / 2 + 31.535rem);
+      top: 54.1rem;
       font-style: normal;
       font-weight: 500;
-      font-size: 15px;
-      line-height: 27px;
-      /* identical to box height */
-
-      /* Primary Text */
-
-      color: #1d1b23;
+      font-size: 1.5rem;
+      line-height: 2.7rem;
+      color: $color-secondary-text;
     }
     .span--1 {
       transform: translate(0rem, 9rem);
@@ -216,99 +203,67 @@
       transform: translate(-3.9rem, 5rem);
     }
   }
-  //   &__circle-1 {
-
-  //   }
-  //   &__circle-2 {
-
-  //   }
   &__circle-3 {
     transform: translateY(-4rem);
   }
   &__paragraph-1 {
     text-transform: capitalize;
     // width: 117px;
-    height: 24px;
-    left: calc(50% - 117px / 2 + 316.5px);
-    top: 655px;
-
-    /* H7 / Poppins / Reguler 16 */
-
+    height: 2.4rem;
+    left: calc(50% - 11.7rem / 2 + 31.65rem);
+    top: 65.5rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     text-align: center;
-
-    /* Primary Text */
-
-    color: #1d1b23;
+    color: $color-secondary-text;
   }
   .minibanner {
     @include flex(space-between, row);
-    border-top: 1px dashed #d7d7d7;
-    border-radius: 14px;
+    border-top: 0.1rem dashed #d7d7d7;
+    border-radius: 1.4rem;
     transform: translateY(12rem);
     // line-height: 2rem;
-    &__text {
-    }
+    // &__text {
+    // }
     &--btn {
       text-transform: capitalize;
-      width: 161px;
-      height: 50px;
-      left: calc(50% - 161px / 2 + 769.5px);
-      top: 781px;
+      width: 16.1rem;
+      height: 5rem;
+      left: calc(50% - 16.1rem / 2 + 76.95rem);
+      top: 78.1rem;
       padding: 1rem 0 2rem 0;
-
-      /* White */
-
-      background: #ffffff;
-      /* Primary */
-
-      border: 1px solid #00a389;
-      border-radius: 12px;
+      background: $bg-color;
+      border: 1px solid $color-primary;
+      border-radius: 1.2rem;
     }
   }
   &__head {
     padding: 1rem 0 2rem 0;
     text-transform: capitalize;
-    width: 416px;
-    height: 27px;
-    left: calc(50% - 416px / 2 + 430px);
-    top: 754px;
-
-    /* H4 / Poppins / Bold 18 */
-
+    width: 41.6rem;
+    height: 2.7rem;
+    left: calc(50% - 41.6rem / 2 + 43rem);
+    top: 75.4rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-    /* identical to box height */
-
-    /* Primary Text */
-
-    color: #1d1b23;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: $color-secondary-text;
   }
   &__paragraph-2 {
-    width: 416px;
+    width: 41.6rem;
     height: 42px;
-    left: calc(50% - 416px / 2 + 430px);
-    top: 792px;
-
-    /* Body 2 / Poppins / Reguler 14 */
-
+    left: calc(50% - 41.6rem / 2 + 43rem);
+    top: 79.2rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-
-    /* Secondary Text */
-
-    color: #717579;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $color-primary-text;
   }
 }

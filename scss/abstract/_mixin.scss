@@ -1,0 +1,33 @@
+@mixin paragraph {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-primary-text;
+}
+
+@mixin bigtext {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: $color-secondary-text;
+}
+
+@mixin medtext {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-secondary-text;
+}
+
+@mixin flex($justify, $direction) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+  flex-direction: $direction;
+}

@@ -1,0 +1,314 @@
+.content {
+  @include flex(space-between, row);
+  .bigbanner--left,
+  .bigbanner--right {
+    width: 71.8rem;
+    height: 51.1rem;
+    left: calc(50% - 71.8rem / 2 - 20.6rem);
+    top: 36.2rem;
+    background: $bg-color;
+    border: 0.1rem solid $bg-color-primary;
+    border-radius: 2rem;
+    margin: 0.8rem;
+    padding: 1rem 3rem;
+  }
+  &__heading {
+    width: 410px;
+    height: 96px;
+    left: calc(50% - 510px / 2 - 260px);
+    top: 412px;
+
+    /* H1 / Poppins / Bold 32 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #1d1b23;
+  }
+  &__paragraph {
+    width: 266px;
+    height: 72px;
+    left: calc(50% - 266px / 2 - 382px);
+    top: 523px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #717579;
+  }
+  &__list {
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 24px;
+    left: calc(50% - 209px / 2 - 361.5px);
+    top: 621px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #717579;
+    text-transform: capitalize;
+  }
+  &__check {
+    margin-right: 2.5rem;
+    height: 23.269619px;
+    // padding: 1rem;
+    width: 24.000001907348633px;
+    left: -0.00006103515625px;
+    top: 3.36517333984375px;
+    border-radius: 0px;
+    left: calc(50% - 718px / 2 - 206px);
+    top: 362px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+  }
+  &__more {
+    padding: 0 0 5rem 5rem;
+    width: 209px;
+    height: 24px;
+    left: calc(50% - 209px / 2 - 361.5px);
+    top: 720px;
+    text-decoration: none;
+    /* H7 / Poppins / Reguler 16 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00a389;
+    text-transform: capitalize;
+  }
+  &__btn {
+    border: none;
+    height: 50px;
+    width: 221px;
+    left: 0px;
+    top: 0px;
+    background: #ffffff;
+    /* Primary */
+
+    border: 1px solid #00a389;
+    border-radius: 12px;
+    transform: translateY(9.5rem);
+  }
+  &__illustration {
+    width: 371.91px;
+    height: 269.31px;
+    left: calc(50% - 371.91px / 2 - 83.87px);
+    top: 554px;
+  }
+
+  .pie {
+    @include flex(space-between, row);
+  }
+  &__title {
+    width: 94px;
+    height: 30px;
+    left: calc(50% - 94px / 2 + 269px);
+    top: 392px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1d1b23;
+  }
+  .list {
+    @include flex(space-between, row);
+  }
+  .listcont {
+    line-height: 5rem;
+    transform: translate(-3rem, -3rem);
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  &__input {
+    height: 20px;
+    width: 20px;
+    left: 1.99993896484375px;
+    top: 2px;
+    border-radius: 0px;
+
+    gap: 1rem;
+  }
+  &__label {
+    transform: translateX(-2rem);
+    height: 24px;
+    left: calc(50% - 46px / 2 + 636px);
+    top: 399px;
+
+    /* H7 / Poppins / Reguler 16 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    /* Primary Text */
+
+    color: #1d1b23;
+  }
+  &__option {
+    width: 38px;
+    height: 38px;
+    left: calc(50% - 38px / 2 + 868px);
+    top: 392px;
+
+    /* White */
+
+    background: #ffffff;
+    /* White */
+
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+  }
+  &__elipse {
+    @include flex(space-between, row);
+  }
+  .elipse {
+    text-align: center;
+    @include flex(start, column);
+
+    & > * {
+      gap: 2rem;
+    }
+
+    span {
+      width: 33px;
+      height: 27px;
+      left: calc(50% - 33px / 2 + 315.35px);
+      top: 541px;
+
+      /* H5 / Poppins / Medium 18 */
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 27px;
+      /* identical to box height */
+
+      /* Primary Text */
+
+      color: #1d1b23;
+    }
+    .span--1 {
+      transform: translate(0rem, 9rem);
+    }
+    .span--2 {
+      transform: translate(-1.5rem, 9rem);
+    }
+    .span--3 {
+      transform: translate(-3.9rem, 5rem);
+    }
+  }
+  //   &__circle-1 {
+
+  //   }
+  //   &__circle-2 {
+
+  //   }
+  &__circle-3 {
+    transform: translateY(-4rem);
+  }
+  &__paragraph-1 {
+    text-transform: capitalize;
+    // width: 117px;
+    height: 24px;
+    left: calc(50% - 117px / 2 + 316.5px);
+    top: 655px;
+
+    /* H7 / Poppins / Reguler 16 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Primary Text */
+
+    color: #1d1b23;
+  }
+  .minibanner {
+    @include flex(space-between, row);
+    border-top: 1px dashed #d7d7d7;
+    border-radius: 14px;
+    transform: translateY(12rem);
+    // line-height: 2rem;
+    &__text {
+    }
+    &--btn {
+      text-transform: capitalize;
+      width: 161px;
+      height: 50px;
+      left: calc(50% - 161px / 2 + 769.5px);
+      top: 781px;
+      padding: 1rem 0 2rem 0;
+
+      /* White */
+
+      background: #ffffff;
+      /* Primary */
+
+      border: 1px solid #00a389;
+      border-radius: 12px;
+    }
+  }
+  &__head {
+    padding: 1rem 0 2rem 0;
+    text-transform: capitalize;
+    width: 416px;
+    height: 27px;
+    left: calc(50% - 416px / 2 + 430px);
+    top: 754px;
+
+    /* H4 / Poppins / Bold 18 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    /* Primary Text */
+
+    color: #1d1b23;
+  }
+  &__paragraph-2 {
+    width: 416px;
+    height: 42px;
+    left: calc(50% - 416px / 2 + 430px);
+    top: 792px;
+
+    /* Body 2 / Poppins / Reguler 14 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    /* Secondary Text */
+
+    color: #717579;
+  }
+}
